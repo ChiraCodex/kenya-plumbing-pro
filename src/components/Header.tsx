@@ -17,14 +17,13 @@ const Header = () => {
       <div className="container flex items-center justify-between h-16 md:h-20">
         <button onClick={() => scrollTo("hero")} className="flex items-center gap-2">
           <div className="w-9 h-9 rounded-lg bg-primary flex items-center justify-center">
-            <span className="text-primary-foreground font-bold text-lg" style={{ fontFamily: "'Playfair Display', serif" }}>A</span>
+            <span className="text-primary-foreground font-bold text-lg" style={{ fontFamily: "'Playfair Display', serif" }}>K</span>
           </div>
           <span className="font-bold text-lg text-foreground tracking-tight" style={{ fontFamily: "'Playfair Display', serif" }}>
-            AquaFlow<span className="text-primary"> Plumbing</span>
+            King David<span className="text-primary"> Plumbing</span>
           </span>
         </button>
 
-        {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-8">
           {navItems.map((item) => (
             <button
@@ -42,18 +41,16 @@ const Header = () => {
             <Phone className="w-4 h-4" />
             +254 700 123 456
           </a>
-          <Button onClick={() => scrollTo("contact")} className="bg-accent text-accent-foreground hover:bg-accent/90 font-semibold">
+          <Button onClick={() => scrollTo("contact")} className="bg-primary text-primary-foreground hover:bg-primary/90 font-semibold">
             Get a Quote
           </Button>
         </div>
 
-        {/* Mobile toggle */}
         <button className="md:hidden text-foreground" onClick={() => setMobileOpen(!mobileOpen)}>
           {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
       </div>
 
-      {/* Mobile menu */}
       {mobileOpen && (
         <div className="md:hidden bg-card border-t border-border px-6 pb-6 space-y-4">
           {navItems.map((item) => (
@@ -69,7 +66,7 @@ const Header = () => {
             <Phone className="w-4 h-4" />
             +254 700 123 456
           </a>
-          <Button onClick={() => scrollTo("contact")} className="w-full bg-accent text-accent-foreground hover:bg-accent/90 font-semibold">
+          <Button onClick={() => scrollTo("contact")} className="w-full bg-primary text-primary-foreground hover:bg-primary/90 font-semibold">
             Get a Quote
           </Button>
         </div>

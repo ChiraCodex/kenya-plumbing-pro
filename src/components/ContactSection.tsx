@@ -7,13 +7,12 @@ const ContactSection = () => (
   <section id="contact" className="py-20 md:py-28 bg-background">
     <div className="container">
       <div className="text-center max-w-2xl mx-auto mb-14">
-        <span className="text-sm font-semibold text-accent uppercase tracking-widest">Get In Touch</span>
+        <span className="text-sm font-semibold text-primary uppercase tracking-widest">Get In Touch</span>
         <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-2">Request a Free Quote</h2>
         <p className="text-muted-foreground mt-4">Describe your plumbing needs and we'll get back to you within the hour.</p>
       </div>
 
       <div className="grid lg:grid-cols-2 gap-10 max-w-5xl mx-auto">
-        {/* Form */}
         <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
           <div className="grid sm:grid-cols-2 gap-4">
             <Input placeholder="Your Name" className="bg-card" />
@@ -26,11 +25,10 @@ const ContactSection = () => (
           </Button>
         </form>
 
-        {/* Contact info */}
         <div className="space-y-6">
           {[
             { icon: Phone, label: "Call Us", value: "+254 700 123 456", href: "tel:+254700123456" },
-            { icon: Mail, label: "Email Us", value: "info@aquaflowplumbing.co.ke", href: "mailto:info@aquaflowplumbing.co.ke" },
+            { icon: Mail, label: "Email Us", value: "info@kingdavidplumbing.co.ke", href: "mailto:info@kingdavidplumbing.co.ke" },
             { icon: MapPin, label: "Location", value: "Westlands, Nairobi, Kenya" },
             { icon: Clock, label: "Working Hours", value: "Mon – Sat: 7AM – 7PM\nEmergencies: 24/7" },
           ].map((item) => (
